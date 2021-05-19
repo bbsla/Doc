@@ -1,0 +1,131 @@
+ :root{
+    --gris:#ECF0F1;
+     --fuente:  'Gupter', serif;
+     --verde__oscuro: #108667  ;
+
+}
+ html{
+     font-size: 62.5%;
+     box-sizing: border-box;
+ }
+ *, *:before, *:after{
+     box-sizing: inherit;
+ }
+
+ body{
+     font-size: 1.6rem;
+     font-family: var(--fuente);
+     line-height: 1.5;
+
+ }
+
+ h1{
+    font-size: 3.5rem;
+ }
+ h2{
+     font-size: 2.5rem;
+
+
+ }
+
+ p{
+     font-size: 2rem;
+
+
+  }
+ h1, h2, h3, p{
+     font-family: var(--fuente);
+ }
+
+ img{
+     max-width: 50%;
+
+ }
+
+
+ /*utilidades*/
+
+ .centrar-texto{
+     text-align:center;
+ }
+ .contenedor{
+     max-width: 120rem;
+     width: 90%;
+     margin: 0 auto;
+ }
+ main h2{
+     color: white;
+     background-color: var(--verde__oscuro);
+
+
+ }
+
+ /*header*/
+ .header{
+     margin-bottom:5rem ;
+     background-image: url("../img/fondo7.webp");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     height: 300px;
+     position: relative;
+ }
+ .header__texto{
+     color: white;
+     position: absolute;
+     padding: 5rem;
+     background-color: rgba( 0, 0, 0, .5 );
+     height: 100%;
+     width: 100%;
+
+
+
+ }
+ .contenido__principal__grid{
+     display: flex;
+     flex-wrap: wrap-reverse;
+ }
+@media (min-width: 960px) {
+    .contenido__principal__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap:15rem;
+    }
+    
+}
+
+ .contenido__principal__texto__grid{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     margin-top: 2rem;
+ }
+ .contenido__principal__rows{
+     display: grid;
+     grid-template-rows: repeat(2,1fr);
+
+ }
+ .contenido__principal__texto h2{
+     text-align: center;
+ }
+ @media (min-width: 768px) {
+     .contenido__principal__texto h2{
+         display: inline-block;
+         padding: 1rem;
+     }
+
+ }
+
+
+ .contenido__principal__borde{
+     border-bottom: 2px solid var(--verde__oscuro);
+ }
+ .contenido__principal__borde:last-of-type{
+     border: none;
+
+ }
+ .marco{
+     background-color: var(--verde__oscuro);
+     height: 5rem;
+
+
+ }
